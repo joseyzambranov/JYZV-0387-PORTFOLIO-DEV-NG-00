@@ -1,0 +1,25 @@
+.about__img{
+    width: 800px;
+    height: 350px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--container-color);
+    padding: .1rem 1rem;
+    border-radius: 1rem;
+    font-weight: var(--font-medium);
+    font-size: var(--small-font-size);
+}
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.section__title{
+    color: var(--first-color);
+}

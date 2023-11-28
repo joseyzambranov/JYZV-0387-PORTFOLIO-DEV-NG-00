@@ -17,3 +17,19 @@
     margin-bottom: var(--mb-2);
     color: var(--container-color);
 }
+
+.home__button{
+    cursor: pointer;
+    font-size: var(--h2-font-size);
+    color : var(--green-color)
+}
+
+.home__button:hover .button__icon{
+    transform: translateX(.25rem);
+}
+
+.button__icon{
+    font-size: 4rem;
+   margin-left: var(--mb-0-5);
+    transition: .3s ;
+}
