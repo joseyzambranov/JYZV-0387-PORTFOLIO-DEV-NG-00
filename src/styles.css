@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'swiper/less';
+@import 'swiper/less/navigation';
+@import 'swiper/less/pagination';
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
@@ -349,6 +352,21 @@ text-align: center;
     font-weight: var(--font-medium);
     font-size: var(--small-font-size);
 }
+
+.button-portfolio{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--container-color);
+    padding: .1rem 1rem;
+    border-radius: 1rem;
+    font-weight: var(--font-medium);
+    font-size: var(--small-font-size);
+}
+
+.button-portfolio:hover{
+    background-color: var(--first-color-alt);
+}
+
 .button:hover{
     background-color: var(--first-color-alt);
 }
@@ -687,7 +705,7 @@ text-align: center;
     overflow: initial;
 }
 .portfolio__content{
-    padding: 0 1.5rem;
+    padding: 2rem 3rem;
 }
 .portfolio__img{
     width: 265px;
@@ -714,10 +732,10 @@ text-align: center;
     color: var(--first-color);
 }
 .swiper-button-prev{
-    left: -.5rem;
+    color: var(--first-color);
 }
 .swiper-button-next{
-    right: -.5rem;
+    color: var(--first-color);
 }
 .swiper-container-horizontal > .swiper-pagination-bullets{
     bottom: -2.5rem;
@@ -1159,10 +1177,10 @@ text-align: center;
         font-size: 3.5rem;
     }
     .swiper-button-prev{
-        left: -3.5rem;
+        
     }
     .swiper-button-next{
-        right: -3.5rem;
+       
     }
     .swiper-container-horizontal > .swiper-pagination-bullets{
         bottom: -4.5rem;

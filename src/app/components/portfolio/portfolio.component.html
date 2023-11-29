@@ -1,94 +1,41 @@
-<!--==================== PORTFOLIO ====================-->
+<!-- portfolio.component.html -->
+
 <section class="portfolio section" id="portfolio">
     <h2 class="section__title">Portafolio</h2>
-    <span class="section__subtitle">Mis proyectos personales</span>
 
+  
     <div class="portfolio__container container swiper-container">
-        <div class="swiper-wrapper">
-             <!--==================== PORTFOLIO 0====================-->
-             <div class="portfolio__content grid swiper-slide">
-                <img src="./assets/img/MacBook Pro 14_ - 1 (1).png" alt="" class="portfolio__img">
-
-                <div class="portfolio__data">
-                    <h3 class="portfolio__title">Control de Gasto</h3>
-                    <p class="portfolio__description">
-                        Aplicación fullstack realizada con react, redux, nodejs, express y mongodb. <br>
-                        Controla tus gastos en tres pasos:  <br>
-                        crea un plan,<br>registrate <br>e ingresa tus gastos diariamente
-                    </p>
-                    <a href="https://joseyzambranov.github.io/expense-control" target="_blank"
-                        class="button button--flex button--smal portfolio__button">
-                        Ir a la web
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-
-                </div>
-            </div>
-            <!--==================== PORTFOLIO 1====================-->
+      <swiper [config]="config">
+        <ng-container *ngFor="let slide of slides; let i = index">
+          <ng-template swiperSlide>
             <div class="portfolio__content grid swiper-slide">
-                <img src="./assets/img/goodideaimg.png" alt="" class="portfolio__img">
-
-                <div class="portfolio__data">
-                    <h3 class="portfolio__title">Videojuego GoodIdeas</h3>
-                    <p class="portfolio__description">
-                        Realizado con unity, C#, inkscape
-                        y Cakewalk,
-                        está publicado en la plataforma de itch.io.
-                    </p>
-                    <a href="https://jose-zambrano.itch.io/goodideas" target="_blank"
-                        class="button button--flex button--smal portfolio__button">
-                        Ir a la web
-                        <i class="ri-arrow-right-line button__icon"></i>
-                    </a>
-
-                </div>
+              <img [src]="slide.image" alt="" class="portfolio__img">
+  
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">{{ slide.title }}</h3>
+                <p class="portfolio__description">{{ slide.description }}</p>
+                <a [href]="slide.link" target="_blank" class="button-portfolio button--flex button--smal portfolio__button">
+                  Ir a la web
+                  <i class="ri-arrow-right-line button__icon"></i>
+                </a>
+              </div>
             </div>
-            <!--==================== PORTFOLIO 2====================-->
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+          </ng-template>
+        </ng-container>
 
-                <div class="portfolio__data">
-                    <h3 class="portfolio__title">Ecommerce Full-Stack</h3>
-                    <p class="portfolio__description">
-                        Proyecto diseñado con las tecnologías
-                        react, redux, mongodb,node.js,Express.
 
-                    </p>
-                    <a href="https://joseyzambranov.github.io/ecommerce-react/" target="_blank"
-                        class="button button--flex button--smal portfolio__button">
-                        Ir a la web
-                        <i class="ri-arrow-right-line button__icon"></i>
-                    </a>
-
-                </div>
-            </div>
-            <!--==================== PORTFOLIO 3====================-->
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./assets/img/portfolio3.jpg" alt="" class="portfolio__img">
-
-                <div class="portfolio__data">
-                    <h3 class="portfolio__title">Landing page de Curso de transformacion</h3>
-                    <p class="portfolio__description">
-                        Web. Diseñada con HTML,Css y vanilla Javascript
-                    </p>
-                    <a href="https://joseyzambranov.github.io/cursodetrasnformacion/" target="_blank"
-                        class="button button--flex button--smal portfolio__button">
-                        Ir a la web
-                        <i class="ri-arrow-right-line button__icon"></i>
-                    </a>
-
-                </div>
-            </div>
-        </div>
-        <!--add arrow-->
-        <div class="swiper-button-next">
-            <i class="ri-arrow-right-s-line swiper-portfolio-icon"></i>
-        </div>
-        <div class="swiper-button-prev">
-            <i class="ri-arrow-left-s-line swiper-portfolio-icon"></i>
-        </div>
-        <!--add pagination-->
-        <div class="swiper-pagination"></div>
+      </swiper>
+  
+              <!-- add arrow -->
+      <!--<div class="swiper-button-next">
+        <i class="ri-arrow-right-s-line swiper-portfolio-icon"></i>
+      </div>
+      <div class="swiper-button-prev">
+        <i class="ri-arrow-left-s-line swiper-portfolio-icon"></i>
+      </div>-->
+  
+      <!-- add pagination 
+      <div class="swiper-pagination"></div>-->
     </div>
-
-</section>
+  </section>
+  

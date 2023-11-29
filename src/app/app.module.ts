@@ -8,6 +8,8 @@ import { HomeComponent } from './components/home/home.component';
 import { MainComponent } from './components/main/main.component';
 import { AboutComponent } from './components/about/about.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { SwiperModule } from 'swiper/angular';
+import { ServiceComponent } from './components/service/service.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     HomeComponent,
     MainComponent,
     AboutComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
