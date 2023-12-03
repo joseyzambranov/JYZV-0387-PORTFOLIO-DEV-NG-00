@@ -99,7 +99,7 @@ body.dark-theme{
 }
 .change-theme{
     font-size: 1.25rem;
-    color: var(--title-color);
+    color: var(--container-color);
     margin-right: var(--mb-1);
     cursor: pointer;
 }
@@ -124,6 +124,8 @@ body{
     background-color: var(--body-color);
     color: var(--text-color);
 }
+
+
 h1,h2,h3,h4{
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
@@ -149,6 +151,7 @@ button{
 }
 .section__title{
     font-size: var(--h1-font-size);
+    color: var(--first-color);
 }
 .section__subtitle{
     display: block;
@@ -161,7 +164,7 @@ text-align: center;
 }
 /*==================== LAYOUT ====================*/
 .container{
-    max-width: 768px;
+    max-width: 1094px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
@@ -211,7 +214,7 @@ text-align: center;
         bottom: -100%;
         left: 0;
         width: 100%;
-        background-color: var(--body-color);
+        background-color:var(--navbar-color);
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
         border-radius: 1.5rem 1.5rem 0 0;
@@ -343,7 +346,22 @@ text-align: center;
     border-radius: .5rem;
     font-weight: var(--font-medium);
 }*/
+
 .button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: black;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    font-weight: var(--font-medium);
+    font-size: var(--small-font-size);
+}
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+
+.button__navbar{
     display: inline-block;
     background-color: var(--yellow-color);
     color: black;
@@ -856,7 +874,7 @@ text-align: center;
     row-gap: 3.5rem;
 }
 .footer__bg{
-    background-color: var(--first-color-second);
+    background-color: var(--navbar-color);
     padding: 2rem 0 3rem;
 }
 .footer__title{

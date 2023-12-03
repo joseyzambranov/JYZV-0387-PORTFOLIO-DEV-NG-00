@@ -1,6 +1,9 @@
 .home{
-    background: linear-gradient(92deg, #000716 19.49%, rgba(0, 7, 22, 0.00) 295.7%);
+    background: linear-gradient(92deg, #000 19.49%, #2074D5 295.7%);
 }
+
+
+  
 
 .home__subtitle-hello{
     font-size: var(--h1-font-size);

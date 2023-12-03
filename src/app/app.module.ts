@@ -10,6 +10,8 @@ import { AboutComponent } from './components/about/about.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { SwiperModule } from 'swiper/angular';
 import { ServiceComponent } from './components/service/service.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ServiceComponent } from './components/service/service.component';
     MainComponent,
     AboutComponent,
     PortfolioComponent,
-    ServiceComponent
+    ServiceComponent,
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

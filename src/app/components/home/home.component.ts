@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+  ngOnInit() {
+    document.body.classList.add('home'); // Asegúrate de agregar la clase 'home' al cuerpo al inicializar el componente
+  }
 }

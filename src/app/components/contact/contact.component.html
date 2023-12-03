@@ -1,0 +1,65 @@
+<!-- contact.component.html -->
+
+<!--==================== CONTACT ME ====================-->
+<section class="contact section" id="contact">
+    <h2 class="section__title">Contácto</h2>
+    <span class="section__subtitle"></span>
+
+    <div class="contact__container container grid">
+        <div>
+            <!--<div class="contact__information">
+                <i class="uil uil-phone contact__icon"></i>
+                <div>
+                    <h3 class="contact__title">Llamame</h3>
+                    <span class="contact__subtitle">953293108</span>
+                </div>
+            </div>-->
+            <div>
+                <div class="contact__information">
+                    <i class="ri-mail-line contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">te envio un correo</h3>
+                        <span class="contact__subtitle">A la brevedad posible</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="contact__information">
+                    <i class="ri-map-pin-line contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">Localidad</h3>
+                        <span class="contact__subtitle">Peru - lima - lince</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="" name="contact" class="contact__form grid" netlify>
+            <div class="contact__inputs grid">
+                <div class="contact__content">
+                    <label for="" class="contact__label">Nombre</label>
+                    <input type="text" class="contact__input" name="name" required>
+                </div>
+                <div class="contact__content">
+                    <label for="" class="contact__label">Email</label>
+                    <input type="email" class="contact__input" name="email" required>
+                </div>
+            </div>
+            <div class="contact__content">
+                <label for="" class="contact__label">Proyecto</label>
+                <input type="text" class="contact__input" name="project">
+            </div>
+            <div class="contact__content">
+                <label for="" class="contact__label">Mensaje</label>
+                <textarea name="message" id="" cols="0" rows="7" class="contact__input" required></textarea>
+            </div>
+
+            <div data-netlify-recaptcha="true"></div>
+
+            <div>
+                <button type="submit" class="button button--flex">
+                    Contáctame
+                </button>
+            </div>
+        </form>
+    </div>
+</section>

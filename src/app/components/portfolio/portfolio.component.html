@@ -2,7 +2,7 @@
 
 <section class="portfolio section" id="portfolio">
     <h2 class="section__title">Portafolio</h2>
-
+    <span class="section__subtitle"></span>
   
     <div class="portfolio__container container swiper-container">
       <swiper [config]="config">
@@ -14,7 +14,7 @@
               <div class="portfolio__data">
                 <h3 class="portfolio__title">{{ slide.title }}</h3>
                 <p class="portfolio__description">{{ slide.description }}</p>
-                <a [href]="slide.link" target="_blank" class="button-portfolio button--flex button--smal portfolio__button">
+                <a [href]="slide.link" target="_blank" class="button button--flex button--smal portfolio__button">
                   Ir a la web
                   <i class="ri-arrow-right-line button__icon"></i>
                 </a>
