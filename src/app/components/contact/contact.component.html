@@ -23,34 +23,6 @@
         </div>
       </div>
     </div>
-    <!--<form action="" name="portfolio" class="contact__form grid" netlify>
-            <div class="contact__inputs grid">
-                <div class="contact__content">
-                    <label for="" class="contact__label">Nombre</label>
-                    <input type="text" class="contact__input" name="name" required>
-                </div>
-                <div class="contact__content">
-                    <label for="" class="contact__label">Email</label>
-                    <input type="email" class="contact__input" name="email" required>
-                </div>
-            </div>
-            <div class="contact__content">
-                <label for="" class="contact__label">Proyecto</label>
-                <input type="text" class="contact__input" name="project">
-            </div>
-            <div class="contact__content">
-                <label for="" class="contact__label">Mensaje</label>
-                <textarea name="message" id="" cols="0" rows="7" class="contact__input" required></textarea>
-            </div>
-
-            <div data-netlify-recaptcha="true"></div>
-
-            <div>
-                <button type="submit" class="button button--flex">
-                    Contáctame
-                </button>
-            </div>
-        </form>-->
     <form
       (submit)="sendContact(contactForm)"
       #contactForm="ngForm"
@@ -64,10 +36,16 @@
         <div class="contact__content">
           <label class="contact__label">Nombre</label>
           <input type="text" class="contact__input" name="name" [(ngModel)]="name" required />
+          <div *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)">
+            <span class="error-message">Nombre es requerido</span>
+         </div>
         </div>
         <div class="contact__content">
           <label class="contact__label">Email</label>
-          <input type="email" class="contact__input" name="email" [(ngModel)]="email" required />
+          <input type="email" class="contact__input" name="email" [(ngModel)]="email" required email/>
+          <div *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)">
+            <span class="error-message">Correo electrónico es requerido y debe ser válido</span>
+         </div>
         </div>
       </div>
       <div class="contact__content">
@@ -85,6 +63,9 @@
           [(ngModel)]="message"
           required
         ></textarea>
+        <div *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)">
+          <span class="error-message">Mensaje es requerido</span>
+       </div>
       </div>
       <div>
         <button type="submit" class="button button--flex">Contáctame</button>
