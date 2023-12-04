@@ -16,39 +16,32 @@
           <context context-type="linenumber">46,47</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="aboutYou" datatype="html">
-        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;ri-home-line nav__icon&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Sobre ti </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">51,52</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="portfolio" datatype="html">
         <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;ri-user-line nav__icon&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Portafolio </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">56,57</context>
+          <context context-type="linenumber">51,52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="services" datatype="html">
         <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;ri-file-code-line nav__icon&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Servicios </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">61,62</context>
+          <context context-type="linenumber">56,57</context>
         </context-group>
       </trans-unit>
       <trans-unit id="blog" datatype="html">
         <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;ri-briefcase-line nav__icon&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Blog </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">66,67</context>
+          <context context-type="linenumber">61,62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact" datatype="html">
         <source> Contáctame </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">72</context>
+          <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
     </body>

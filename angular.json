@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "JYZV-0387-PORTFOLIO-DEV-NG-00": {
+      "i18n": {
+        "sourceLocale": "es-ES",
+        "locales": {
+          "en": "src/locale/messages.en-US.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +19,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize":true,
+            "aot": true,
             "outputPath": "dist/jyzv-0387-portfolio-dev-ng-00",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -30,6 +38,12 @@
             "scripts": []
           },
           "configurations": {
+            "en":{
+              "localize":["en"]
+            },
+            "es":{
+              "localize":["es"]
+            },
             "production": {
               "budgets": [
                 {
@@ -52,10 +66,7 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
-            },  
-            "en-US": {
-              "aot": true
-           }
+            }
           },
           "defaultConfiguration": "production"
         },
@@ -64,6 +75,12 @@
           "configurations": {
             "production": {
               "browserTarget": "JYZV-0387-PORTFOLIO-DEV-NG-00:build:production"
+            },
+            "es":{
+              "browserTarget": "JYZV-0387-PORTFOLIO-DEV-NG-00:build:es"
+            },
+            "en":{
+              "browserTarget": "JYZV-0387-PORTFOLIO-DEV-NG-00:build:en"
             },
             "development": {
               "browserTarget": "JYZV-0387-PORTFOLIO-DEV-NG-00:build:development"
