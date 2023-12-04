@@ -52,6 +52,8 @@
             </div>
         </form>-->
     <form
+      (submit)="sendContact(contactForm)"
+      #contactForm="ngForm"
       name="contact-form"
       class="contact__form grid"
       method="POST"
@@ -60,26 +62,27 @@
       <input type="hidden" name="form-name" value="contact-form" />
       <div class="contact__inputs grid">
         <div class="contact__content">
-          <label  class="contact__label">Nombre</label>
-          <input type="text" class="contact__input" name="name" required />
+          <label class="contact__label">Nombre</label>
+          <input type="text" class="contact__input" name="name" [(ngModel)]="name" required />
         </div>
         <div class="contact__content">
-          <label  class="contact__label">Email</label>
-          <input type="email" class="contact__input" name="email" required />
+          <label class="contact__label">Email</label>
+          <input type="email" class="contact__input" name="email" [(ngModel)]="email" required />
         </div>
       </div>
       <div class="contact__content">
-        <label  class="contact__label">Proyecto</label>
-        <input type="text" class="contact__input" name="project" />
+        <label class="contact__label">Proyecto</label>
+        <input type="text" class="contact__input" name="project"  [(ngModel)]="project" />
       </div>
       <div class="contact__content">
-        <label  class="contact__label">Mensaje</label>
+        <label class="contact__label">Mensaje</label>
         <textarea
           name="message"
           id=""
           cols="0"
           rows="7"
           class="contact__input"
+          [(ngModel)]="message"
           required
         ></textarea>
       </div>
@@ -87,16 +90,5 @@
         <button type="submit" class="button button--flex">Contáctame</button>
       </div>
     </form>
-    <!--<form name="contact" netlify>
-        <p>
-          <label>Name <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Email <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>-->  
-</div>
+  </div>
 </section>
