@@ -65,6 +65,9 @@
             },
             "en":{
               "localize":["en"]
+            },
+            "es":{
+              "localize":["es"]
             }
           },
           "defaultConfiguration": "production"
@@ -77,6 +80,9 @@
             },
             "en":{
               "browserTarget": "JYZV-0387-PORTFOLIO-DEV-NG-00:build:en"
+            },
+            "es":{
+              "browserTarget": "JYZV-0387-PORTFOLIO-DEV-NG-00:build:es"
             },
             "development": {
               "browserTarget": "JYZV-0387-PORTFOLIO-DEV-NG-00:build:development"
