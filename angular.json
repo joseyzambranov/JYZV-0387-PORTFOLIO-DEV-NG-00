@@ -30,8 +30,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              { "glob": "_redirects", "input": "src", "output": "/" }
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -39,9 +38,7 @@
             "scripts": []
           },
           "configurations": {
-            "en":{
-              "localize":["en"]
-            },
+
             "production": {
               "budgets": [
                 {
@@ -55,6 +52,7 @@
                   "maximumError": "5.00MB"
                 }
               ],
+              
               "outputHashing": "all"
             },
             "development": {
@@ -64,6 +62,9 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en":{
+              "localize":["en"]
             }
           },
           "defaultConfiguration": "production"
@@ -99,8 +100,7 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              { "glob": "_redirects", "input": "src", "output": "/" }
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
