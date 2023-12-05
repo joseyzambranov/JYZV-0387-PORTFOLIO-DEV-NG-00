@@ -1,5 +1,5 @@
 [build]
-  publish = "dist/JYZV-0387-PORTFOLIO-DEV-NG-00"
+  publish = "dist/jyzv-0387-portfolio-dev-ng-00"
   command = "npm run build"
 
 [[redirects]]
