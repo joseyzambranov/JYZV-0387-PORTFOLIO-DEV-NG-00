@@ -1,6 +1,6 @@
 [build]
   publish = "dist/JYZV-0387-PORTFOLIO-DEV-NG-00"
-  command = "ng build --prod"
+  command = "npm run build"
 
 [[redirects]]
   from = "/*"
