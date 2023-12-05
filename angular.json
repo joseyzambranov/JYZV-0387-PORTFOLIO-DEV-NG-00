@@ -5,7 +5,7 @@
   "projects": {
     "JYZV-0387-PORTFOLIO-DEV-NG-00": {
       "i18n": {
-        "sourceLocale": "es-ES",
+        "sourceLocale": "es",
         "locales": {
           "en": "src/locale/messages.en-US.xlf"
         }
