@@ -31,7 +31,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              { "glob": "_redirects", "input": "src", "output": "/es" }
+              { "glob": "_redirects", "input": "src", "output": "/" }
             ],
             "styles": [
               "src/styles.css"
@@ -41,9 +41,6 @@
           "configurations": {
             "en":{
               "localize":["en"]
-            },
-            "es":{
-              "localize":["es"]
             },
             "production": {
               "budgets": [
@@ -77,9 +74,6 @@
             "production": {
               "browserTarget": "JYZV-0387-PORTFOLIO-DEV-NG-00:build:production"
             },
-            "es":{
-              "browserTarget": "JYZV-0387-PORTFOLIO-DEV-NG-00:build:es"
-            },
             "en":{
               "browserTarget": "JYZV-0387-PORTFOLIO-DEV-NG-00:build:en"
             },
@@ -106,7 +100,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              { "glob": "_redirects", "input": "src", "output": "/es" }
+              { "glob": "_redirects", "input": "src", "output": "/" }
             ],
             "styles": [
               "src/styles.css"
