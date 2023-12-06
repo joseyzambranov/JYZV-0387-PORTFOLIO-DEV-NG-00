@@ -8,9 +8,15 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class NavbarComponent {
   @ViewChild('navMenu') navMenu!: ElementRef;
   @ViewChild('themeButton') themeButton!: ElementRef;
+  @ViewChild('navMenuLenguage') navMenuLenguage!: ElementRef;
 
   toggleMenu() {
     this.navMenu.nativeElement.classList.toggle('show-menu');
+    
+  }
+
+  toggleLanguage() {
+    this.navMenuLenguage.nativeElement.classList.toggle('show-menu');
     
   }
 
