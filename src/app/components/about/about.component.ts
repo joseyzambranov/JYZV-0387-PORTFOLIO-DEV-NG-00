@@ -10,8 +10,10 @@ export class AboutComponent {
   constructor(private location: Location) { }
 
   getPdfUrl(): string {
-    const language = this.location.path().split('/')[1]; // Obtén el idioma de la URL
-    const pdfFileName = `portfolio-${language}.pdf`; // Asegúrate de tener archivos PDF con nombres correspondientes
+    let urlSegments = this.location.path().split('/')
+    let language = urlSegments[1] || 'es';
+    console.log(language)
+    let pdfFileName = `portfolio-${language}.pdf`; // Asegúrate de tener archivos PDF con nombres correspondientes
 
     return `./assets/pdf/${pdfFileName}`;
   }
