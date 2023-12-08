@@ -1,4 +1,6 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild ,Inject } from '@angular/core';
+import { DOCUMENT } from "@angular/common";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +11,15 @@ export class NavbarComponent {
   @ViewChild('navMenu') navMenu!: ElementRef;
   @ViewChild('themeButton') themeButton!: ElementRef;
   @ViewChild('navMenuLenguage') navMenuLenguage!: ElementRef;
+
+  constructor(@Inject(DOCUMENT) document: any , private router: Router) { }
+
+  changeLanguage(language:string) {
+    let urlSegments = document.location.href.split("/")
+    urlSegments[3] = language;
+    let newUrl = urlSegments.join("/");
+    this.router.navigateByUrl(newUrl);
+  }
 
   toggleMenu() {
     this.navMenu.nativeElement.classList.toggle('show-menu');

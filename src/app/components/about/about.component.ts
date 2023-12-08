@@ -13,7 +13,7 @@ export class AboutComponent {
   getPdfUrl(): string {
     let urlSegments = document.location.href.split("/")
     let language = urlSegments[3] || 'es';;
-    let pdfFileName = `portfolio-${language}.pdf`; // Asegúrate de tener archivos PDF con nombres correspondientes
+    let pdfFileName = `portfolio-${language}.pdf`;
 
     return `./assets/pdf/${pdfFileName}`;
   }
