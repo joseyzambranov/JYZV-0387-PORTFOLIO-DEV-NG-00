@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Location } from '@angular/common';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-about',
@@ -7,12 +7,13 @@ import { Location } from '@angular/common';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-  constructor(private location: Location) { }
+  constructor(private router: Router ) { }
 
   getPdfUrl(): string {
-    let urlSegments = this.location.path().split('/')
-    let language = urlSegments[1] || 'es';
+    let urlSegments = this.router.url
+    let language = urlSegments;
     console.log(language)
+    console.log();
     let pdfFileName = `portfolio-${language}.pdf`; // Asegúrate de tener archivos PDF con nombres correspondientes
 
     return `./assets/pdf/${pdfFileName}`;
