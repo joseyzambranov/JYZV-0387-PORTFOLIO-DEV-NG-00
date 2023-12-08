@@ -8,13 +8,11 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "i18n-extract": "ng extract-i18n --format xlf --output-path src/i18n && npm run normalize-xliff-base && npm run merge-xliff-all && npm run normalize-xliff-all",
-    "merge-xliff-all": "npm run merge-xliff-en && npm run merge-xliff-es",
+    "merge-xliff-all": "npm run merge-xliff-en",
     "merge-xliff-en": "node node_modules/xliff-simple-merge -i src/i18n/messages.xlf -d src/i18n/messages.en.xlf",
-    "merge-xliff-es": "node node_modules/xliff-simple-merge -i src/i18n/messages.xlf -d src/i18n/messages.es.xlf",
-    "normalize-xliff-all": "npm run normalize-xliff-base && npm run normalize-xliff-en && npm run normalize-xliff-es",
+    "normalize-xliff-all": "npm run normalize-xliff-base && npm run normalize-xliff-en",
     "normalize-xliff-base": "node node_modules/xml_normalize -n -i src/i18n/messages.xlf -o src/i18n/messages.xlf -r /xliff/file/unit/notes -s /xliff/file/unit/@id",
-    "normalize-xliff-en": "node node_modules/xml_normalize -n -i src/i18n/messages.en.xlf -o src/i18n/messages.en.xlf -r /xliff/file/unit/notes -s /xliff/file/unit/@id",
-    "normalize-xliff-es": "node node_modules/xml_normalize -n -i src/i18n/messages.es.xlf -o src/i18n/messages.es.xlf -r /xliff/file/unit/notes -s /xliff/file/unit/@id"
+    "normalize-xliff-en": "node node_modules/xml_normalize -n -i src/i18n/messages.en.xlf -o src/i18n/messages.en.xlf -r /xliff/file/unit/notes -s /xliff/file/unit/@id"
   },
   "private": true,
   "dependencies": {

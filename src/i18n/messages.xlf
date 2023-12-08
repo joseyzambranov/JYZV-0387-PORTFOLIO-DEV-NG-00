@@ -2,6 +2,27 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="es" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="aboutTitle" datatype="html">
+        <source>Sobre Mi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutDescription" datatype="html">
+        <source>Mi pasión por la planificación de proyectos web, enfocados en las necesidades de las personas, me ha llevado a trabajar en servicios que incluyen reservas, pasarelas de pago, envío masivo de mensajería, ecommerce y landing pages. Mi principal motivación es enriquecer la experiencia del usuario mediante soluciones tecnológicas seguras y de alto rendimiento.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="downloadCV" datatype="html">
+        <source>Descarga mi CV</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="8338871443771034611" datatype="html">
         <source>JZ</source>
         <context-group purpose="location">
