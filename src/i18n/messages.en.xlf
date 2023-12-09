@@ -50,7 +50,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="english" datatype="html">
-        <source>Ingles</source>
+        <source>Inglés</source>
         <target state="new">English</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
@@ -259,7 +259,7 @@
       </trans-unit>
       <trans-unit id="homeTalk" datatype="html">
         <source>Hablemos de tu idea <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;uil uil-angle-double-right button__icon&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
-        <target state="new">Let's talk about your idea <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;uil uil-angle-double-right button__icon&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
+        <target state="new">Let&apos;s talk about your idea <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;uil uil-angle-double-right button__icon&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/home/home.component.html</context>
           <context context-type="linenumber">25,27</context>
@@ -271,6 +271,86 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
           <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="service" datatype="html">
+        <source>Servicios</source>
+        <target state="new">Services</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceWeb" datatype="html">
+        <source>Proyectos Web</source>
+        <target state="new">Web Projects</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceWebDescription" datatype="html">
+        <source>Diseñamos sitios a medida para cumplir con tus objetivos y necesidades específicas, reflejando tu visión única.</source>
+        <target state="new">We custom design sites to meet your specific goals and needs, reflecting your unique vision.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceWebExplore" datatype="html">
+        <source>Explorar más</source>
+        <target state="new">Explore more</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceManagement" datatype="html">
+        <source>Gestión de Proyectos</source>
+        <target state="new">Project management</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceManagementDescription" datatype="html">
+        <source>Desde la planificación hasta la entrega final, gestionamos tu proyecto con asignación eficiente de recursos, seguimiento de plazos y comunicación continua para asegurar su éxito.</source>
+        <target state="new">From planning to final delivery, we manage your project with efficient resource allocation, deadline monitoring and continuous communication to ensure its success.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceManagementExplore" datatype="html">
+        <source>Explorar más</source>
+        <target state="new">Explore more</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceDesign" datatype="html">
+        <source>Diseño de Arquitectura</source>
+        <target state="new">Architecture Design</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceDesignDescription" datatype="html">
+        <source>Creamos arquitecturas sólidas para tus proyectos, garantizando rendimiento óptimo, escalabilidad y máxima seguridad.</source>
+        <target state="new">We create solid architectures for your projects, guaranteeing optimal performance, scalability and maximum security.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">65,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceDesignExplore" datatype="html">
+        <source>Explorar más</source>
+        <target state="new">Explore more</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
     </body>

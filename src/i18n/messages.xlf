@@ -213,7 +213,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="english" datatype="html">
-        <source>Ingles</source>
+        <source>Inglés</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
           <context context-type="linenumber">38,40</context>
@@ -238,6 +238,76 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
           <context context-type="linenumber">17,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="service" datatype="html">
+        <source>Servicios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceWeb" datatype="html">
+        <source>Proyectos Web</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceWebDescription" datatype="html">
+        <source>Diseñamos sitios a medida para cumplir con tus objetivos y necesidades específicas, reflejando tu visión única.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceWebExplore" datatype="html">
+        <source>Explorar más</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceManagement" datatype="html">
+        <source>Gestión de Proyectos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceManagementDescription" datatype="html">
+        <source>Desde la planificación hasta la entrega final, gestionamos tu proyecto con asignación eficiente de recursos, seguimiento de plazos y comunicación continua para asegurar su éxito.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceManagementExplore" datatype="html">
+        <source>Explorar más</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceDesign" datatype="html">
+        <source>Diseño de Arquitectura</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceDesignDescription" datatype="html">
+        <source>Creamos arquitecturas sólidas para tus proyectos, garantizando rendimiento óptimo, escalabilidad y máxima seguridad.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">65,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceDesignExplore" datatype="html">
+        <source>Explorar más</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/service/service.component.html</context>
+          <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
     </body>
