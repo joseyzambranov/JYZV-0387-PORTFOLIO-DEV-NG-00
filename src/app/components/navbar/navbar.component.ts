@@ -28,8 +28,8 @@ export class NavbarComponent {
     let urlSegments = document.location.href.split("/")
     urlSegments[3] = language;
     let newUrl = urlSegments.join("/");
-    let urlWithPath = `${newUrl}${this.router.url}`
-    return urlWithPath
+    //let urlWithPath = `${newUrl}${this.router.url}`
+    return newUrl
   }
 
   toggleMenu() {
