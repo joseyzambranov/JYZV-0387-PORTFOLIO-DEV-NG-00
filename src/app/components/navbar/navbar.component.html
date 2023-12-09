@@ -28,21 +28,8 @@
         </div>
 
         <div class="nav__menu-language" #navMenuLenguage id="nav-menu">
-            <!--<ul class="nav__list-lenguage grid">
-                <li class="nav__item">
-                    <a href="https://joseyzambranov.netlify.app/es/" class="nav__link" i18n="@@spanish">
-                        Español
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="https://joseyzambranov.netlify.app/en/" class="nav__link" i18n="@@english">
-                        Inglés
-                    </a>
-                </li>
-            </ul>-->
             <ul class="nav__list-lenguage grid">
                 <li class="nav__item" *ngFor="let lang of lenguage">
-                    <!--<a [href]="'https://joseyzambranov.netlify.app/' + lang.id + '/'" class="nav__link">-->
                         <a [href]="changeLanguage(lang.id)" class="nav__link">
                         {{ lang.lenguage }}
                     </a>
@@ -52,7 +39,6 @@
         </div>
         <a href="#contact" class="button__navbar" i18n="@@navbarContact"> Contáctame </a>
         <div class="nav__btns">
-            <!--Theme change button-->
             <div class="change-theme global__icon" (click)="toggleLanguage()">
                 
                 <i class="ri-global-line"></i>
