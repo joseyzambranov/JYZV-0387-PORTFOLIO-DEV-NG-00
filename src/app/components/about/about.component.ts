@@ -26,6 +26,6 @@ export class AboutComponent {
   getImgfUrl(): string {
     let language = this.getUrl()
     let pdfFileName = `Diagram_${language}.svg`;
-    return `./assets/img/Diagram_${pdfFileName}`;
+    return `./assets/img/${pdfFileName}`;
   }
 }
