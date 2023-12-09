@@ -9,11 +9,23 @@ import { DOCUMENT } from "@angular/common"
 export class AboutComponent {
   constructor(@Inject(DOCUMENT) document: any ) { }
 
-  getPdfUrl(): string {
+  getUrl(): string {
     let urlSegments = document.location.href.split("/")
     let language = urlSegments[3] || 'es';;
+    return language;
+  }
+
+
+  getPdfUrl(): string {
+    let language = this.getUrl()
     let pdfFileName = `portfolio-${language}.pdf`;
 
     return `./assets/pdf/${pdfFileName}`;
+  }
+
+  getImgfUrl(): string {
+    let language = this.getUrl()
+    let pdfFileName = `Diagram_${language}.svg`;
+    return `./assets/img/Diagram_${pdfFileName}`;
   }
 }

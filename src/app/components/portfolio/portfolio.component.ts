@@ -22,6 +22,14 @@ export class PortfolioComponent {
 
   slides = [
     {
+      link: 'https://reservas.surcotenis.pe/#/reserve',
+      image: 'https://surcotenis.pe/wp-content/uploads/2023/08/Captura-removebg-preview-300x151.png',
+      title: 'Reservas surco tenis',
+      description: 'Proyecto colaborativo el cual estuve encargado de la lógica de reservas y pasarela de pagos, la solución está construido con node, express ,mysql',
+      title_en: 'Tennis groove reservations',
+      description_en: 'Collaborative project in which I was in charge of the reservation logic and payment gateway, the solution is built with node, express, mysql',
+    },
+    {
       link: 'https://joseyzambranov.github.io/expense-control/',
       image: 'https://josezambrano.netlify.app/assets/img/MacBook%20Pro%2014_%20-%201%20(1).png',
       title: 'Control de Gasto',
@@ -45,7 +53,7 @@ export class PortfolioComponent {
       description: 'Web. Diseñada con HTML,Css y vanilla Javascript',
       title_en: 'Transformation course landing page',
       description_en: 'Web. Designed with HTML, CSS and vanilla Javascript',
-    },
+    }
   ];
 
   getPdfUrl(): string {

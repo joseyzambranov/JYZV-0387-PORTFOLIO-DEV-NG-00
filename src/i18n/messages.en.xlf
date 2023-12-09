@@ -64,10 +64,6 @@
           <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">45</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="aboutTitle" datatype="html">
         <source>Sobre Mi</source>
@@ -197,36 +193,84 @@
           <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="slideTitle" datatype="html">
-        <source>
-          <x id="INTERPOLATION" equiv-text="{{ slide.title }}"/>
-        </source>
-        <target state="new">
-          <x id="INTERPOLATION" equiv-text="{{ slide.title_en }}"/>
-        </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="slideDescription" datatype="html">
-        <source>
-          <x id="INTERPOLATION" equiv-text="{{ slide.description }}"/>
-        </source>
-        <target state="new">
-          <x id="INTERPOLATION" equiv-text="{{ slide.description_en }}"/>
-        </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
-          <context context-type="linenumber">16</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="slideButton" datatype="html">
         <source>Ir a la web <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;ri-arrow-right-line button__icon&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
         <target state="new">Go to the website<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;ri-arrow-right-line button__icon&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
           <context context-type="linenumber">17,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerAbout" datatype="html">
+        <source>Sobre Mi</source>
+        <target state="new">About Me</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerPortfolio" datatype="html">
+        <source>Portafolio</source>
+        <target state="new">Portfolio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerContact" datatype="html">
+        <source>Contáctame</source>
+        <target state="new">Contáct Me</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerCopy" datatype="html">
+        <source>© José Zambrano. Derechos reservados</source>
+        <target state="new">© José Zambrano. All rights reserved</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeHi" datatype="html">
+        <source>Hola, mi nombre es</source>
+        <target state="new">Hi, My name is</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeNameSumer" datatype="html">
+        <source>Jose Zambrano</source>
+        <target state="new">Jose Zambrano</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Iam" datatype="html">
+        <source>soy programador y quiero ayudarte a hacer realidad tus ideas</source>
+        <target state="new">I am a programmer and I want to help you make your ideas come true</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeTalk" datatype="html">
+        <source>Hablemos de tu idea <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;uil uil-angle-double-right button__icon&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <target state="new">Let's talk about your idea <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;uil uil-angle-double-right button__icon&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarContact" datatype="html">
+        <source>Contáctame</source>
+        <target state="new">Contact Me</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">45</context>
         </context-group>
       </trans-unit>
     </body>

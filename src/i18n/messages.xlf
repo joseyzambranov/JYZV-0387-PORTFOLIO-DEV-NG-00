@@ -29,10 +29,6 @@
           <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">45</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="iSendYouEmail" datatype="html">
         <source>te envio un correo</source>
@@ -118,6 +114,62 @@
           <context context-type="linenumber">71</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="footerAbout" datatype="html">
+        <source>Sobre Mi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerPortfolio" datatype="html">
+        <source>Portafolio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerContact" datatype="html">
+        <source>Contáctame</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerCopy" datatype="html">
+        <source>© José Zambrano. Derechos reservados</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeHi" datatype="html">
+        <source>Hola, mi nombre es</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeNameSumer" datatype="html">
+        <source>Jose Zambrano</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Iam" datatype="html">
+        <source>soy programador y quiero ayudarte a hacer realidad tus ideas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeTalk" datatype="html">
+        <source>Hablemos de tu idea <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;uil uil-angle-double-right button__icon&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="8338871443771034611" datatype="html">
         <source>JZ</source>
         <context-group purpose="location">
@@ -167,29 +219,18 @@
           <context context-type="linenumber">38,40</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="navbarContact" datatype="html">
+        <source>Contáctame</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="slidesName" datatype="html">
         <source>Portafolio</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
           <context context-type="linenumber">4</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="slideTitle" datatype="html">
-        <source>
-          <x id="INTERPOLATION" equiv-text="{{ slide.title }}"/>
-        </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="slideDescription" datatype="html">
-        <source>
-          <x id="INTERPOLATION" equiv-text="{{ slide.description }}"/>
-        </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/portfolio/portfolio.component.html</context>
-          <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="slideButton" datatype="html">
