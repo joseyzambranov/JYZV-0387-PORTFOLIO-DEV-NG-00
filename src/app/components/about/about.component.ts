@@ -1,5 +1,4 @@
 import { Component, Inject } from '@angular/core';
-import { Router } from '@angular/router';
 import { DOCUMENT } from "@angular/common"
 
 @Component({

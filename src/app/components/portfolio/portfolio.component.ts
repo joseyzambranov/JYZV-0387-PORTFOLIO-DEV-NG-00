@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component ,Inject} from '@angular/core';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, SwiperOptions } from 'swiper';
+import { DOCUMENT } from "@angular/common"
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -9,6 +10,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent {
+  constructor(@Inject(DOCUMENT) document: any ) { }
   config: SwiperOptions = {
     
     slidesPerView: 1,
@@ -44,8 +46,19 @@ export class PortfolioComponent {
       title_en: 'Transformation course landing page',
       description_en: 'Web. Designed with HTML, CSS and vanilla Javascript',
     },
-
-    
-    // Agrega más objetos para cada proyecto
   ];
+
+  getPdfUrl(): string {
+    let urlSegments = document.location.href.split("/")
+    let language = urlSegments[3];
+    return language;
+  }
+
+  getTranslatedTitle(slide: any): string {
+    return this.getPdfUrl() === 'en' ? slide.title_en : slide.title;
+  }
+
+  getTranslatedDescription(slide: any): string {
+    return this.getPdfUrl() === 'en' ? slide.description_en : slide.description;
+  }
 }
