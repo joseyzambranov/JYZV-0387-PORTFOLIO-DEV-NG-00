@@ -1,5 +1,5 @@
 <section class="contact section" id="contact">
-  <h2 class="section__title">Contácto</h2>
+  <h2 class="section__title" i18n="@@contact">Contácto</h2>
   <span class="section__subtitle"></span>
 
   <div class="contact__container container grid">
@@ -8,8 +8,8 @@
         <div class="contact__information">
           <i class="ri-mail-line contact__icon"></i>
           <div>
-            <h3 class="contact__title">te envio un correo</h3>
-            <span class="contact__subtitle">A la brevedad posible</span>
+            <h3 class="contact__title" i18n="@@iSendYouEmail">te envio un correo</h3>
+            <span class="contact__subtitle" i18n="@@brevity">A la brevedad posible</span>
           </div>
         </div>
       </div>
@@ -17,8 +17,8 @@
         <div class="contact__information">
           <i class="ri-map-pin-line contact__icon"></i>
           <div>
-            <h3 class="contact__title">Localidad</h3>
-            <span class="contact__subtitle">Peru - lima - lince</span>
+            <h3 class="contact__title" i18n="@@location">Localidad</h3>
+            <span class="contact__subtitle" i18n="@@address">Peru - lima - lince</span>
           </div>
         </div>
       </div>
@@ -34,26 +34,26 @@
       <input type="hidden" name="form-name" value="contact-form" />
       <div class="contact__inputs grid">
         <div class="contact__content">
-          <label class="contact__label">Nombre</label>
+          <label class="contact__label" i18n="@@nameFormContact">Nombre</label>
           <input type="text" class="contact__input" name="name" [(ngModel)]="name" required />
           <div *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)">
-            <span class="error-message">Nombre es requerido</span>
+            <span class="error-message" i18n="@@nameRequired">Nombre es requerido</span>
          </div>
         </div>
         <div class="contact__content">
-          <label class="contact__label">Email</label>
+          <label class="contact__label" i18n="@@email">Email</label>
           <input type="email" class="contact__input" name="email" [(ngModel)]="email" required email/>
           <div *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)">
-            <span class="error-message">Correo electrónico es requerido y debe ser válido</span>
+            <span class="error-message" i18n="@@emailRequired">Correo electrónico es requerido y debe ser válido</span>
          </div>
         </div>
       </div>
       <div class="contact__content">
-        <label class="contact__label">Proyecto</label>
+        <label class="contact__label" i18n="@@projectFormContact">Proyecto</label>
         <input type="text" class="contact__input" name="project"  [(ngModel)]="project" />
       </div>
       <div class="contact__content">
-        <label class="contact__label">Mensaje</label>
+        <label class="contact__label" i18n="@@messageFormContact">Mensaje</label>
         <textarea
           name="message"
           id=""
@@ -64,11 +64,11 @@
           required
         ></textarea>
         <div *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)">
-          <span class="error-message">Mensaje es requerido</span>
+          <span class="error-message" i18n="@@messageRequired">Mensaje es requerido</span>
        </div>
       </div>
       <div>
-        <button type="submit" class="button button--flex">Contáctame</button>
+        <button type="submit" class="button button--flex" i18n="@@buttonContact">Contáctame</button>
       </div>
     </form>
   </div>

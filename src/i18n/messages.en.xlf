@@ -58,8 +58,12 @@
         </context-group>
       </trans-unit>
       <trans-unit id="contact" datatype="html">
-        <source>Contáctame</source>
+        <source>Contácto</source>
         <target state="new">Contact Me</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
           <context context-type="linenumber">45</context>
@@ -75,7 +79,7 @@
       </trans-unit>
       <trans-unit id="aboutDescription" datatype="html">
         <source>Mi pasión por la planificación de proyectos web, enfocados en las necesidades de las personas, me ha llevado a trabajar en servicios que incluyen reservas, pasarelas de pago, envío masivo de mensajería, ecommerce y landing pages. Mi principal motivación es enriquecer la experiencia del usuario mediante soluciones tecnológicas seguras y de alto rendimiento.</source>
-        <target state="new">Mi pasión por la planificación de proyectos web, enfocados en las necesidades de las personas, me ha llevado a trabajar en servicios que incluyen reservas, pasarelas de pago, envío masivo de mensajería, ecommerce y landing pages. Mi principal motivación es enriquecer la experiencia del usuario mediante soluciones tecnológicas seguras y de alto rendimiento.</target>
+        <target state="new">My passion for web project planning, focused on people&apos;s needs, has led me to work on services that include reservations, payment gateways, mass messaging, e-commerce, and landing pages. My main motivation is to enhance the user experience through secure and high-performance technological solutions.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.html</context>
           <context context-type="linenumber">7,9</context>
@@ -87,6 +91,102 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.html</context>
           <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="iSendYouEmail" datatype="html">
+        <source>te envio un correo</source>
+        <target state="new">I send you an e-mail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="brevity" datatype="html">
+        <source>A la brevedad posible</source>
+        <target state="new">As soon as possible</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="location" datatype="html">
+        <source>Localidad</source>
+        <target state="new">Location</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="address" datatype="html">
+        <source>Peru - lima - lince</source>
+        <target state="new">Peru - lima - lince</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nameFormContact" datatype="html">
+        <source>Nombre</source>
+        <target state="new">Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nameRequired" datatype="html">
+        <source>Nombre es requerido</source>
+        <target state="new">The name is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email" datatype="html">
+        <source>Email</source>
+        <target state="new">Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="emailRequired" datatype="html">
+        <source>Correo electrónico es requerido y debe ser válido</source>
+        <target state="new">the email is required and must be valid</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projectFormContact" datatype="html">
+        <source>Proyecto</source>
+        <target state="new">Proyect</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="messageFormContact" datatype="html">
+        <source>Mensaje</source>
+        <target state="new">Messege</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="messageRequired" datatype="html">
+        <source>Mensaje es requerido</source>
+        <target state="new">the message is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="buttonContact" datatype="html">
+        <source>Contáctame</source>
+        <target state="new">Contáct Me</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">71</context>
         </context-group>
       </trans-unit>
     </body>
