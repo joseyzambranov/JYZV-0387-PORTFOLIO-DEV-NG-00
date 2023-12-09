@@ -14,11 +14,22 @@ export class NavbarComponent {
 
   constructor(@Inject(DOCUMENT) document: any , private router: Router) { }
 
+  lenguage = [
+    {
+      id:"en",
+      lenguage:"English"
+    },{
+      id:"es",
+      lenguage:"Español"
+    },
+  ]
+
   changeLanguage(language:string) {
     let urlSegments = document.location.href.split("/")
     urlSegments[3] = language;
     let newUrl = urlSegments.join("/");
-    this.router.navigateByUrl(newUrl);
+    let urlWithPath = `${newUrl}${this.router.url}`
+    return urlWithPath
   }
 
   toggleMenu() {
