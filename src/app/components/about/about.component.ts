@@ -18,7 +18,7 @@ export class AboutComponent {
 
   getPdfUrl(): string {
     let language = this.getUrl()
-    let pdfFileName = `portfolio-${language}.pdf`;
+    let pdfFileName = `jose-zambrano-${language}.pdf`;
 
     return `./assets/pdf/${pdfFileName}`;
   }
